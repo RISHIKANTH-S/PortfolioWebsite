@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Rishi</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Namasthe,<br>I'm <span class="home__title-color">Rishi</span><br> Software Developer</h1>
+
+                    <!--<a href="#" class="button">Contact</a>-->
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/rishi-suggula/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/RISHIKANTH-S" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/PROF_DP.jpg"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container">
+                    <p class="about__text">Hey, I’m Rishikanth, a Java backend developer and AWS Certified Developer – Associate who finds dopamine in building high-performance systems that are cleanly architected and are production ready. I work extensively with Spring, Flask, Kafka, Redis, and AWS to create backend services that are Fault tolerant, scalable, and efficient. What sets me apart is my first principles approach to problem-solving—I don’t just patch things up, I dig deep to understand how and why systems behave the way they do. Whether it's crafting APIs, handling real-time data pipelines, or building resilient microservices, I’m all about solving real-world problems with elegant code. Outside of work, I like watching Tennis, cheering for Carlos Alcaraz with the energy of a final-set tiebreak ! I also enjoy consuming business podcasts. I believe the best engineers understand both the system and the story—and I’m always curious to learn more about both.</p>                                         
+                </div>
+            </section>
+
+            <!--Skills-->
+            <section class="skills section" id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills__container">
+                <div class="skills__grid">
+                    <div class="skill__card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill__icon">
+                        <h4 class="skill__name">Java</h4>
+                        <p class="skill__level">Advanced</p>
+                    </div>
+                    
+                    <div class="skill__card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Framework" class="skill__icon">
+                        <h4 class="skill__name">Spring Framework</h4>
+                        <p class="skill__level">Advanced</p>
+                    </div>
+                    
+                    <div class="skill__card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="skill__icon">
+                        <h4 class="skill__name">Docker</h4>
+                        <p class="skill__level">Intermediate</p>
+                    </div>
+                    
+                    <div class="skill__card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" class="skill__icon">
+                        <h4 class="skill__name">AWS</h4>
+                        <p class="skill__level">Intermediate</p>
+                    </div>
+                    
+                    <div class="skill__card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Microservices" class="skill__icon">
+                        <h4 class="skill__name">Microservices</h4>
+                        <p class="skill__level">Advanced</p>
+                    </div>
+                    <div class="skill__card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" class="skill__icon">
+                        <h4 class="skill__name">Flask</h4>
+                        <p class="skill__level">Advanced</p>
+                    </div>
+                    
+                    <div class="skill__card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Version Control" class="skill__icon">
+                        <h4 class="skill__name">Git & Version Control</h4>
+                        <p class="skill__level">Advanced</p>
+                    </div>
+                    <div class="skill__card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="skill__icon">
+                        <h4 class="skill__name">React</h4>
+                        <p class="skill__level">Advanced</p>
+                    </div>
+                    <div class="skill__card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill__icon">
+                        <h4 class="skill__name">Python</h4>
+                        <p class="skill__level">Advanced</p>
+                    </div>
+                    
+                    <div class="skill__card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="skill__icon">
+                        <h4 class="skill__name">PostgreSQL</h4>
+                        <p class="skill__level">Advanced</p>
+                    </div>
+                    <div class="skill__card">
+                        <img src="https://python.langchain.com/img/brand/wordmark.png" alt="LangChain" class="skill__icon">
+                        <h4 class="skill__name">LangChain</h4>
+                        <p class="skill__level">Intermediate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Experience-->
+        <section class="experience section" id="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="experience__container">          
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__date">2025 - Present</div>
+                        <h4 class="timeline__position">Java Full Stack Developer</h4>
+                        <h5 class="timeline__company">Marlabs</h5>
+                        <p class="timeline__description">
+                           Developed Spring Boot-based RESTful web services to facilitate cross-system communication and data orchestration within distributed e-commerce infrastructure. Implemented API-driven architecture patterns to support business logic processing, third-party integrations, and real-time transaction handling during platform modernization initiatives.
+                        </p>
+                        <div class="timeline__technologies">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Spring-Boot</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__date">2023 - 2024</div>
+                        <h4 class="timeline__position">Project Assistant</h4>
+                        <h5 class="timeline__company">University of Wisconsin-Milwaukee</h5>
+                        <p class="timeline__description">
+                            Developed an integrated time-tracking application leveraging Workday HCM APIs to synchronize student employee punch data with university payroll systems. Built RESTful web services using Spring Boot to handle real-time entries, automated timesheet generation, and seamless data transfer to Workday for payroll processing and compliance reporting.
+                        </p>
+                        <div class="timeline__technologies">
+                            <span class="tech-tag">Spring-Boot</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Workday</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__date">2021 - 2023</div>
+                        <h4 class="timeline__position">Software Developer-1</h4>
+                        <h5 class="timeline__company">Accenture</h5>
+                        <p class="timeline__description">
+                            Developed Spring Boot-based RESTful web services to facilitate cross-system communication and data orchestration within distributed e-commerce infrastructure. Implemented API-driven architecture patterns to support business logic processing, third-party integrations, and real-time transaction handling during platform modernization initiatives.
+                        </p>
+                        <div class="timeline__technologies">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">SpringBoot</span>
+                            <span class="tech-tag">MicroServices</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <div id="projects-view">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="assets/img/TimeTracker.png" alt="Time Tracker" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Time Tracker</h3>
+                    <p class="tech-stack-label">Tech Stack:</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">SpringBoot</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/RISHIKANTH-S/time-tracker" target="_blank" rel="noopener noreferrer" title="View project on GitHub">
+                            <svg class="github-icon" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/img/EHR.png" alt="EHR-Assistant" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">EHR-Assistant</h3>
+                    <p class="tech-stack-label">Tech Stack:</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Ajax</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">Faiss</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/RISHIKANTH-S/EHR-Assistant" target="_blank" rel="noopener noreferrer" title="View project on GitHub">
+                            <svg class="github-icon" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/img/Ticketing.png" alt="Low-Level-Ticketing System" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Ticketing System</h3>
+                    <p class="tech-stack-label">Tech Stack:</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Core-Java</span>
+                        <span class="tech-tag">Low Level System Design</span>
+                        <span class="tech-tag">JSON File Storage</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/RISHIKANTH-S/lld-TrainBookingSystem" target="_blank" rel="noopener noreferrer" title="View project on GitHub">
+                            <svg class="github-icon" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/img/Customer Review.png" alt="Customer Review Analysis" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Flipkart Review Web Scrapper</h3>
+                    <p class="tech-stack-label">Tech Stack:</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python-3</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">BeautifulSoup</span>
+                        <span class="tech-tag">HTML/Jinja</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/RISHIKANTH-S/scrapper_deploy" target="_blank" rel="noopener noreferrer" title="View project on GitHub">
+                            <svg class="github-icon" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Detail Views -->
+    <div id="timetracker-skills" class="skills-detail">
+        <button class="back-btn" onclick="showProjects()">← Back to Projects</button>
+        <div class="skills-header">
+            <h2 class="skills-title">Time Tracker</h2>
+        </div>
+        
+        <!--<div class="skills-categories">
+            <div class="skill-category">
+                <h3 class="category-title">Frontend</h3>
+                <div class="skill-list">
+                    <span class="skill-item">React</span>
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">CSS3</span>
+                    <span class="skill-item">HTML5</span>
+                    <span class="skill-item">Bootstrap</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3 class="category-title">Backend</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Node.js</span>
+                    <span class="skill-item">Express.js</span>
+                    <span class="skill-item">MongoDB</span>
+                    <span class="skill-item">REST API</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3 class="category-title">Tools & Others</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">Postman</span>
+                    <span class="skill-item">Chart.js</span>
+                    <span class="skill-item">JWT</span>
+                </div>
+            </div>
+        </div>!-->
+    </div>
+
+    <div id="ticketing-skills" class="skills-detail">
+        <button class="back-btn" onclick="showProjects()">← Back to Projects</button>
+        <div class="skills-header">
+            <h2 class="skills-title">Ticketing System</h2>
+        </div>
+        
+        <div class="skills-categories">
+            <div class="skill-category">
+                <h3 class="category-title">Frontend</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Vue.js</span>
+                    <span class="skill-item">TypeScript</span>
+                    <span class="skill-item">Vuetify</span>
+                    <span class="skill-item">SCSS</span>
+                    <span class="skill-item">Axios</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3 class="category-title">Backend</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">Django</span>
+                    <span class="skill-item">PostgreSQL</span>
+                    <span class="skill-item">Redis</span>
+                    <span class="skill-item">Celery</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3 class="category-title">DevOps & Others</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Docker</span>
+                    <span class="skill-item">AWS</span>
+                    <span class="skill-item">Nginx</span>
+                    <span class="skill-item">Email API</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="review-skills" class="skills-detail">
+        <button class="back-btn" onclick="showProjects()">← Back to Projects</button>
+        <div class="skills-header">
+            <h2 class="skills-title">Customer Review</h2>
+        </div>
+        
+        <div class="skills-categories">
+            <div class="skill-category">
+                <h3 class="category-title">Frontend</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Angular</span>
+                    <span class="skill-item">TypeScript</span>
+                    <span class="skill-item">Angular Material</span>
+                    <span class="skill-item">RxJS</span>
+                    <span class="skill-item">SCSS</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3 class="category-title">Backend</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Java</span>
+                    <span class="skill-item">Spring Boot</span>
+                    <span class="skill-item">MySQL</span>
+                    <span class="skill-item">JPA/Hibernate</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3 class="category-title">Analytics & ML</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">TensorFlow</span>
+                    <span class="skill-item">NLP</span>
+                    <span class="skill-item">Data Visualization</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSkills(projectId) {
+            // Hide projects view
+            document.getElementById('projects-view').style.display = 'none';
+            
+            // Hide all skills details
+            const skillsDetails = document.querySelectorAll('.skills-detail');
+            skillsDetails.forEach(detail => detail.classList.remove('active'));
+            
+            // Show selected skills detail
+            document.getElementById(projectId + '-skills').classList.add('active');
+        }
+
+        function showProjects() {
+            // Show projects view
+            document.getElementById('projects-view').style.display = 'block';
+            
+            // Hide all skills details
+            const skillsDetails = document.querySelectorAll('.skills-detail');
+            skillsDetails.forEach(detail => detail.classList.remove('active'));
+        }
+
+        // Add scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.project-card');
+            
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                        }, index * 200);
+                    }
+                });
+            });
+
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Submit" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Rishi</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; Rishi. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
