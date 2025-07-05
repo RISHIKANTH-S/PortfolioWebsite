@@ -377,7 +377,7 @@ img {
   height: 60px;
   margin: 0 auto 0.8rem;
   transition: transform 0.3s ease;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 4px 8px rgba(194, 188, 188, 0));
 }
 
 .skill__card:hover .skill__icon {
@@ -385,9 +385,9 @@ img {
 }
 
 .skill__name {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: var(--white-color);
+  color: rgba(14, 14, 14, 0.878);
   margin-bottom: 0.3rem;
   text-shadow: var(--text-shadow);
 }
