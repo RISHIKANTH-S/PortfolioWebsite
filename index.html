@@ -35,7 +35,6 @@
                 </div>
             </nav>
         </header>
-
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
@@ -67,6 +66,8 @@
                 </div>
             </section>
 
+    
+    
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
                 <h2 class="section-title">About</h2>
@@ -126,6 +127,10 @@
                     <div class="skill__card">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="skill__icon">
                         <h4 class="skill__name">PostgreSQL</h4>
+                    </div>
+                    <div class="skill__card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka" class="skill__icon">
+                        <h4 class="skill__name">Kafka</h4>
                     </div>
                     <div class="skill__card">
                         <img src="https://python.langchain.com/img/brand/wordmark.png" alt="LangChain" class="skill__icon">
@@ -292,6 +297,35 @@
         </div>
     </section>
     <script>
+        
+        const roles = [
+            "Software Developer",
+            "Java Backend Developer", 
+            "Full Stack Developer"
+        ];
+        
+        const textElements = document.querySelectorAll('.sliding-text');
+        let currentIndex = 0;
+        
+        function slideToNext() {
+            const currentElement = textElements[currentIndex];
+            const nextIndex = (currentIndex + 1) % roles.length;
+            const nextElement = textElements[nextIndex];
+            
+            // Exit current text
+            currentElement.classList.remove('active');
+            currentElement.classList.add('exit');
+            
+            // After a short delay, bring in the next text
+            setTimeout(() => {
+                currentElement.classList.remove('exit');
+                nextElement.classList.add('active');
+                currentIndex = nextIndex;
+            }, 300);
+        }
+        
+        // Change text every 3 seconds
+        setInterval(slideToNext, 3000);
 
         // Add scroll animations
         document.addEventListener('DOMContentLoaded', function() {
