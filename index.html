@@ -349,30 +349,6 @@
                 observer.observe(card);
             });
         });
-
-    // Contact form AJAX submission
-    document.querySelector('.contact__form .contact__button').addEventListener('click', async function(e) {
-        e.preventDefault();
-        const inputs = document.querySelectorAll('.contact__form .contact__input');
-        const name = inputs[0].value;
-        const email = inputs[1].value;
-        const message = document.querySelector('.contact__form textarea').value;
-
-        const response = await fetch('http://localhost:3001/contact', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name, email, message })
-        });
-
-        if (response.ok) {
-            alert('Message sent!');
-            inputs[0].value = '';
-            inputs[1].value = '';
-            document.querySelector('.contact__form textarea').value = '';
-        } else {
-            alert('Failed to send message. Please try again later.');
-        }
-    });
     </script>
 
             <!--===== CONTACT =====-->
@@ -380,11 +356,11 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
+                    <form action="https://formspree.io/f/xanjgykk" method="POST" class="contact__form">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                        <textarea name="message" placeholder="Your message" rows="10" class="contact__input" required></textarea>
+                        <input type="submit" value="Submit" class="contact__button button">
                     </form>
                 </div>
             </section>
