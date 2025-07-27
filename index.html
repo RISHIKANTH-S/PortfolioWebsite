@@ -39,7 +39,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Namasthe,<br>I'm <span class="home__title-color">Rishi</span><br> Software Developer</h1>
+                    <h1 class="home__title">Namasthe,<br>I'm <span class="home__title-color">Rishi</span><br><span class="typing" id="role"></span></h1>
                     <a href="https://drive.google.com/file/d/11T4yhWIdq1FthKlu7l6MkkaYQYpDjvvx/view?usp=sharing" class="home__social-icon resume-button" title="Download Resume">
                         <i class='bx bx-download'></i>
                         <span>Resume</span>
@@ -301,35 +301,45 @@
         </div>
     </section>
     <script>
-        
-        const roles = [
+            const roles = [
             "Software Developer",
-            "Java Backend Developer", 
-            "Full Stack Developer"
+            "Java Backend Developer",
+            "Python Developer",
+            "Full Stack Developer",
+            "AWS Developer Associate"
         ];
-        
-        const textElements = document.querySelectorAll('.sliding-text');
-        let currentIndex = 0;
-        
-        function slideToNext() {
-            const currentElement = textElements[currentIndex];
-            const nextIndex = (currentIndex + 1) % roles.length;
-            const nextElement = textElements[nextIndex];
-            
-            // Exit current text
-            currentElement.classList.remove('active');
-            currentElement.classList.add('exit');
-            
-            // After a short delay, bring in the next text
-            setTimeout(() => {
-                currentElement.classList.remove('exit');
-                nextElement.classList.add('active');
-                currentIndex = nextIndex;
-            }, 300);
+
+        let roleIndex = 0;
+        let charIndex = 0;
+        const typingElement = document.getElementById("role");
+        const typingSpeed = 100;
+        const pauseDuration = 2000;
+
+        function typeRole() {
+            if (charIndex < roles[roleIndex].length) {
+            typingElement.textContent += roles[roleIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeRole, typingSpeed);
+            } else {
+            setTimeout(eraseRole, pauseDuration);
+            }
         }
-        
-        // Change text every 3 seconds
-        setInterval(slideToNext, 3000);
+
+        function eraseRole() {
+            if (charIndex > 0) {
+            typingElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(eraseRole, typingSpeed / 2);
+            } else {
+            roleIndex = (roleIndex + 1) % roles.length;
+            setTimeout(typeRole, typingSpeed);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(typeRole, 500);
+        });
+
 
         // Add scroll animations
         document.addEventListener('DOMContentLoaded', function() {

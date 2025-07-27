@@ -43,7 +43,7 @@
 /* Responsive Typography */
 @media screen and (min-width: 968px) {
   :root {
-    --big-font-size: 3.5rem;
+    --big-font-size: 3rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
     --smaller-font-size: 0.875rem;
@@ -220,6 +220,21 @@ img {
 
 .home__title-color {
   color: var(--first-color);
+}
+.typing {
+  font-weight: bold;
+  font-size: var(--big-font-size);
+  border-right: 2px solid #666;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink-caret 0.7s step-end infinite;
+  min-height: 1.5em;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #666; }
 }
 
 .home__social {
